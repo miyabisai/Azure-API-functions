@@ -6,6 +6,7 @@ import azure.functions as func
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Hi,You connected this funcitons successfully.And you are editting the second version')
     logging.info('Test deploy!!')
+    logging.info('Test deploy222!!')
     name = req.params.get('name')
     if not name:
         try:
